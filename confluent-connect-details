@@ -1,0 +1,93 @@
+sudo apt install openjdk-11-jdk
+where is java installed in Ubuntu:
+readlink -f $(which java)
+
+https://docs.confluent.io/platform/6.2/quickstart/ce-quickstart.html
+
+
+
+export CONFLUENT_HOME=/home/vboxuser/confluent_connector/confluent-community-7.5.1/confluent-7.5.1
+export PATH=$PATH:$CONFLUENT_HOME/bin
+
+Confluent Hub Client:
+https://docs.confluent.io/platform/current/connect/confluent-hub/client.html
+
+Add Confluent Hub Client path to PATH:
+export PATH=$PATH:/home/vboxuser/confluent-hub-client-latest/bin
+
+confluent-hub install --no-prompt confluentinc/kafka-connect-datagen:latest
+
+Install Confluent CLI:
+https://docs.confluent.io/confluent-cli/current/install.html
+
+curl -sL --http1.1 https://cnfl.io/cli | sh -s -- -b /usr/local/bin v|release| 
+
+
+Set the Confluent Platform home environment variable:
+
+export CONFLUENT_HOME=<The directory where Confluent is installed>
+
+Copy
+
+Add the location of the CLI to the PATH:
+
+export PATH=$CONFLUENT_HOME/bin:$PATH
+
+
+
+
+Run this cmd again:
+export CONFLUENT_HOME=/home/vboxuser/confluent_connector/confluent-community-7.5.1/confluent-7.5.1
+
+and then:
+export PATH=$CONFLUENT_HOME/bin:$PATH
+
+https://stackoverflow.com/questions/70966586/confluent-error-set-environment-variable-confluent-home
+
+Confluent Command Centre:
+ http://localhost:9021
+
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/bin/java
+export PATH=$JAVA_HOME:$PATH
+
+Run source ~/.bashrc in terminal
+/home/vboxuser/confluent_connector/confluent-community-7.5.1/confluent-7.5.1
+
+    To use the Confluent CLI in the Confluent Platform package:
+
+    Set the Confluent Platform home environment variable:
+
+    export CONFLUENT_HOME=/home/vboxuser/confluent_connector/confluent-community-7.5.1/confluent-7.5.1
+
+    Copy
+
+    Add the location of the CLI to the PATH:
+
+    export PATH=$CONFLUENT_HOME/bin:$PATH
+
+    Copy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
